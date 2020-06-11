@@ -148,16 +148,31 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <footer class="main-footer">
         <!-- To the right -->
         <div class="float-right d-none d-sm-inline">
-            Anything you want
+            <div class="template-demo">
+                <a href="https://www.facebook.com/mohamed.bouagga.1">
+                    <button type="button" class="btn btn-social-icon btn-facebook btn-rounded"><i
+                            class="fab fa-facebook"></i></button>
+                </a>
+                <a href="https://twitter.com/islamslam1">
+                    <button type="button" class="btn btn-social-icon btn-twitter btn-rounded"><i
+                            class="fab fa-twitter"></i></button>
+                </a>
+                <a href="github.com/islambouagga/">
+                    <button type="button" class="btn btn-social-icon btn-dribbble btn-rounded"><i
+                            class="fab fa-github"></i></button>
+                </a>
+                <a href="https://www.linkedin.com/in/mohammed-bachir-bouagga-13328714b/">
+                    <button type="button" class="btn btn-social-icon btn-linkedin btn-rounded"><i
+                            class="fab fa-linkedin"></i></button>
+                </a>
+                <a href="https://www.instagram.com/islambouagga">
+                    <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i
+                            class="fab fa-instagram"></i></button>
+                </a>
+            </div>
         </div>
         <!-- Default to the left -->
-
-
-        <strong>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with
-            <i class="far fa-heart"></i>
-            by <a href="https://www.linkedin.com/in/mohammed-bachir-bouagga-13328714b/" target="_blank">Mohamed Bachir BOUAGGA</a>
-           </strong>
+        <strong>Copyright &copy;<script>document.write(new Date().getFullYear());</script> <a href="https://www.linkedin.com/in/mohammed-bachir-bouagga-13328714b/">Mohamed Bachir BOUAGGA</a>.</strong> .
     </footer>
 </div>
 <!-- ./wrapper -->

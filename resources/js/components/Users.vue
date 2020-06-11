@@ -17,9 +17,10 @@
                     <!-- /.card-header -->
                     <div class="card-body table-responsive p-0">
                         <div class="row mt-2">
-                            <label style="margin-left: 4%;margin-top: 1%; margin-right: 1%">Filter</label>
+                            <label style="margin-left: 4%;margin-top: 1%; margin-right: 1%">Filter by name</label>
                             <input class="form-control col-md-4"
-                                   v-model="filters.name.value || filters.email.value || filters.type.value || filters.bio.value  "/>
+                                   v-model="filters.name.value"
+                            />
                         </div>
                         <v-table class="table table-hover text-nowrap" :data="users"
                                  :filters="filters"
@@ -28,7 +29,6 @@
                                  :pageSize="pageSize"
                                  @totalPagesChanged="totalPages = numb ">
                             <thead slot="head">
-                            <v-th  sortKey="id" defaultSort="asc">ID</v-th>
                             <v-th  sortKey="name">Name</v-th>
                             <v-th  sortKey="email">Email</v-th>
                             <v-th  sortKey="type" >Type</v-th>
@@ -38,7 +38,6 @@
                             </thead>
                             <tbody slot="body" slot-scope="{displayData}">
                             <tr v-for="row in displayData" :key="row.guid">
-                                <td>{{ row.id }}</td>
                                 <td>{{ row.name }}</td>
                                 <td>{{ row.email }}</td>
                                 <td>
@@ -175,7 +174,6 @@
                 filters: {
                     name: {value: '', keys: ['name']},
                     type: {value: '', keys: ['type']},
-                    bio: {value: '', keys: ['bio']},
                     email: {value: '', keys: ['email']}
                 },
             }
@@ -254,7 +252,7 @@
 
                     axios.get("api/users").then(({data}) => {
                         this.users = data;
-                        this.totalPages = Math.round((this.users.length)/(this.pageSize)) ;
+                        this.totalPages = Math.round((this.users.length)/(this.pageSize))+1 ;
                     });
                 }
             },
