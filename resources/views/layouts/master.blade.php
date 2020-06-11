@@ -151,7 +151,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
             Anything you want
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+
+
+        <strong>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with
+            <i class="far fa-heart"></i>
+            by <a href="https://www.linkedin.com/in/mohammed-bachir-bouagga-13328714b/" target="_blank">Mohamed Bachir BOUAGGA</a>
+           </strong>
     </footer>
 </div>
 <!-- ./wrapper -->
