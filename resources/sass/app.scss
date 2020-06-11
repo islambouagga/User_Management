@@ -1,0 +1,44 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+// Variables
+@import 'variables';
+$fa-font-path:"../webfonts";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// admin-lte
+@import '~admin-lte/dist/css/adminlte.css';
+
+// Fontawesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+// bootstrap-vue
+@import '~bootstrap-vue/src/index.scss';
+
+.router-link-exact-active {
+    background-color: #007bff;
+    color: white !important;
+}
+.vt-sort:before{
+    font-family: "Font Awesome 5 Free";
+    padding-right: 0.5em;
+    width: 1.28571429em;
+    display: inline-block;
+    text-align: center;
+}
+
+.vt-sortable:before{
+    content: "\f0dc";
+}
+
+.vt-asc:before{
+    content: "\f160";
+}
+
+.vt-desc:before{
+    content: "\f161";
+}
