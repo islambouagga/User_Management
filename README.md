@@ -56,7 +56,7 @@ It's just like any other Laravel project. Basically here is how you use it for y
 
 
 
-## License
+## Copyright
 ***Mohamed Bachir Bouagga***
 
 [LinkediIn](https://www.linkedin.com/in/mohammed-bachir-bouagga-13328714b/)
