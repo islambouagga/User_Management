@@ -41,7 +41,7 @@
 *   vue-router: ^3.3.2
 *   vuejs-smart-table: 0.0.5
 
-##Installation
+##Installation##
 It's just like any other Laravel project. Basically here is how you use it for yourself.
 
 *    Clone the repo `git clone https://github.com/islambouagga/User_Management.git` .
